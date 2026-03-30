@@ -12,7 +12,7 @@
 			</p>
 			<p class="reveal reveal-delay-2">
 				No tool connects them. Your journal has gaps. Your notes lack context.
-				And every existing app starts from a blank page — none of them ingest
+				And every existing app starts from a blank page. None of them ingest
 				<em>what you actually said.</em>
 			</p>
 		</div>
