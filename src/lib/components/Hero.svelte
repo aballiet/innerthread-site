@@ -23,7 +23,7 @@
 			</h1>
 			<p class="hero-sub reveal reveal-delay-2">
 				innerthread aggregates your conversations across ChatGPT, Claude, WhatsApp,
-				and Messenger into a private local database — then helps you reflect on patterns,
+				and Messenger into a private local database, then helps you reflect on patterns,
 				track growth, and enrich your notes with evidence from what you actually said.
 			</p>
 			<div class="hero-ctas reveal reveal-delay-3">

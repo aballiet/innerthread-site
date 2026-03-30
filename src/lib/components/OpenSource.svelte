@@ -10,7 +10,7 @@
 				<h2>Built for people who own their tools.</h2>
 				<p class="cta-desc">
 					innerthread is free, open source, and runs entirely on your machine.
-					Clone the repo, import your conversations, and start reflecting — in under five minutes.
+					Clone the repo, import your conversations, and start reflecting. Under five minutes.
 				</p>
 				<div class="cta-code">
 					<code>

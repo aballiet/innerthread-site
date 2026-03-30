@@ -17,7 +17,7 @@
 				<div class="feature-tag">Ingestion</div>
 				<h3>Real conversation data</h3>
 				<p>
-					Not what you remember to journal — what you actually said.
+					Not what you remember to journal. What you actually said.
 					Import from ChatGPT, Claude, WhatsApp, Messenger.
 					Auto-detect format from file contents.
 				</p>
@@ -28,7 +28,7 @@
 				<h3>AI-powered via MCP</h3>
 				<p>
 					Claude Desktop reads your data through a local MCP server.
-					No API costs — uses your existing Claude Pro subscription.
+					No API costs. Uses your existing Claude Pro subscription.
 					Guided sessions that surface patterns across your life.
 				</p>
 			</div>

@@ -20,7 +20,7 @@
 					</svg>
 				</div>
 				<h3>Import</h3>
-				<p>Export your conversations from ChatGPT, Claude, WhatsApp, or Messenger. Drag and drop — innerthread auto-detects the format.</p>
+				<p>Export your conversations from ChatGPT, Claude, WhatsApp, or Messenger. Drag and drop. innerthread auto-detects the format.</p>
 			</div>
 
 			<div class="step-connector" aria-hidden="true">
@@ -60,7 +60,7 @@
 					</svg>
 				</div>
 				<h3>Reflect</h3>
-				<p>Open Claude Desktop and start a reflection session. innerthread exposes your data via MCP — using your existing Claude subscription. No API costs.</p>
+				<p>Open Claude Desktop and start a reflection session. innerthread exposes your data via MCP, using your existing Claude subscription. No API costs.</p>
 			</div>
 
 			<div class="step-connector" aria-hidden="true">
@@ -78,7 +78,7 @@
 					</svg>
 				</div>
 				<h3>Write Back</h3>
-				<p>Reflections and insights are saved back to your Obsidian vault — enriching your notes with evidence from what you actually said.</p>
+				<p>Reflections and insights are saved back to your Obsidian vault, enriching your notes with evidence from what you actually said.</p>
 			</div>
 		</div>
 	</div>

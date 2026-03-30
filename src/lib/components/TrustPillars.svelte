@@ -19,7 +19,7 @@
 				<h3>Your data stays yours.</h3>
 				<p>
 					Everything lives in a SQLite database on your machine. No cloud sync, no accounts,
-					no telemetry. Your raw conversations are never sent anywhere — analysis happens
+					no telemetry. Your raw conversations are never sent anywhere. Analysis happens
 					locally or through your own Claude sessions.
 				</p>
 				<div class="pillar-detail">
@@ -40,7 +40,7 @@
 				</div>
 				<h3>Your tools, enhanced.</h3>
 				<p>
-					innerthread doesn't replace anything — it makes your existing tools smarter.
+					innerthread doesn't replace anything. It makes your existing tools smarter.
 					Reflect in Claude Desktop using MCP with your Pro subscription.
 					Write back insights to your Obsidian vault. No new app to learn.
 				</p>
