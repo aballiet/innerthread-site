@@ -21,7 +21,7 @@
 					</svg>
 				</div>
 				<h3>Sync with Chrome</h3>
-				<p>Install the browser extension. It auto-syncs new ChatGPT and Claude conversations in the background, rate-limited, completely silent.</p>
+				<p>Install the browser extension. It auto-syncs new ChatGPT, Claude, and Gemini conversations in the background. Rate-limited, completely silent.</p>
 			</div>
 
 			<div class="step-connector" aria-hidden="true">
@@ -39,8 +39,8 @@
 						<path d="M12 15V3" stroke="var(--color-teal)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
 				</div>
-				<h3>Import the rest</h3>
-				<p>Export WhatsApp (.txt) or Messenger (JSON) archives and drag them into retrace. Format is detected automatically. No configuration.</p>
+				<h3>Import everything else</h3>
+				<p>Drop in WhatsApp exports, Google Keep archives, calendar files, SMS backups, or Instagram DMs. Format is detected automatically. Obsidian daily notes sync directly from your vault.</p>
 			</div>
 
 			<div class="step-connector" aria-hidden="true">
@@ -58,8 +58,8 @@
 						<circle cx="12" cy="12" r="3" stroke="var(--color-accent)" stroke-width="1.5"/>
 					</svg>
 				</div>
-				<h3>Local AI processes everything</h3>
-				<p>Conversations are segmented, topics extracted, sentiment scored, and embedded using all-MiniLM-L6-v2 (384D). Runs on your machine. No data leaves.</p>
+				<h3>On-device AI extracts structure</h3>
+				<p>Conversations are segmented into meaningful chunks. A local LLM generates summaries, extracts topics, detects emotions, and identifies key facts. Embeddings power semantic search. Choose your model size. All on your machine.</p>
 			</div>
 
 			<div class="step-connector" aria-hidden="true">
@@ -77,8 +77,8 @@
 						<path d="M8 11h6M11 8v6" stroke="var(--color-teal)" stroke-width="1.5" stroke-linecap="round"/>
 					</svg>
 				</div>
-				<h3>Reflect with Claude Desktop</h3>
-				<p>retrace exposes 13 MCP tools to Claude Desktop. Search by keyword or meaning. Pull up a person's full history. Uses your existing Claude Pro subscription.</p>
+				<h3>Query with Claude Desktop</h3>
+				<p>Retrace exposes 13 MCP tools to Claude Desktop. Search by keyword or meaning. Pull up a person's full timeline. Track how a topic evolved. Uses your existing Claude Pro subscription.</p>
 			</div>
 
 			<div class="step-connector" aria-hidden="true">
@@ -95,8 +95,8 @@
 						<path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
 				</div>
-				<h3>Write back to Obsidian</h3>
-				<p>Insights write to your vault as callout blocks with source evidence. Always preview before any changes are written.</p>
+				<h3>Write back to your tools</h3>
+				<p>Reflections save to Obsidian as structured notes with source evidence. Your context layer enriches the tools you already use, not replaces them.</p>
 			</div>
 		</div>
 	</div>

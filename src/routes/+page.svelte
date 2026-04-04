@@ -5,7 +5,9 @@
 	import HowItWorks from '$lib/components/HowItWorks.svelte';
 	import Features from '$lib/components/Features.svelte';
 	import MCPSection from '$lib/components/MCPSection.svelte';
+	import Compounding from '$lib/components/Compounding.svelte';
 	import TrustPillars from '$lib/components/TrustPillars.svelte';
+	import MobileVision from '$lib/components/MobileVision.svelte';
 	import OpenSource from '$lib/components/OpenSource.svelte';
 </script>
 
@@ -15,5 +17,7 @@
 <HowItWorks />
 <Features />
 <MCPSection />
+<Compounding />
 <TrustPillars />
+<MobileVision />
 <OpenSource />

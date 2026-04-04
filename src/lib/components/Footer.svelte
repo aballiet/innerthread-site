@@ -9,9 +9,9 @@
 						<path d="M12 4v16" stroke="var(--color-teal)" stroke-width="1.5" stroke-linecap="round"/>
 						<path d="M16 6c-2 4-2 8 0 12" stroke="var(--color-accent-light)" stroke-width="1.5" stroke-linecap="round"/>
 					</svg>
-					<span>retrace</span>
+					<span>Retrace</span>
 				</a>
-				<p>Your conversations contain more than you remember.</p>
+				<p>Context, not destination.</p>
 			</div>
 
 			<div class="footer-links">
@@ -24,13 +24,13 @@
 				</div>
 				<div class="footer-col">
 					<h4>Community</h4>
-					<a href="https://github.com/aballiet/innerthread" target="_blank" rel="noopener">GitHub</a>
-					<a href="https://github.com/aballiet/innerthread/issues" target="_blank" rel="noopener">Issues</a>
-					<a href="https://github.com/aballiet/innerthread/blob/main/docs/roadmap.md" target="_blank" rel="noopener">Roadmap</a>
+					<a href="https://github.com/aballiet/retrace" target="_blank" rel="noopener">GitHub</a>
+					<a href="https://github.com/aballiet/retrace/issues" target="_blank" rel="noopener">Issues</a>
+					<a href="https://github.com/aballiet/retrace/blob/main/docs/roadmap.md" target="_blank" rel="noopener">Roadmap</a>
 				</div>
 				<div class="footer-col">
 					<h4>Legal</h4>
-					<a href="https://github.com/aballiet/innerthread/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
+					<a href="https://github.com/aballiet/retrace/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
 				</div>
 			</div>
 		</div>

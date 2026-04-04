@@ -5,7 +5,7 @@
 <section id="features" class="features">
 	<div class="container">
 		<div class="section-header" use:inview>
-			<h2 class="reveal">Everything retrace <span class="highlight">can do.</span></h2>
+			<h2 class="reveal">Everything Retrace <span class="highlight">can do.</span></h2>
 			<p class="reveal reveal-delay-1">
 				Built for people who use AI tools daily and want to understand their own thinking.
 			</p>
@@ -17,7 +17,7 @@
 				<h3>Set and forget with Chrome</h3>
 				<p>
 					The browser extension runs in the background and syncs new conversations
-					from ChatGPT and Claude as you use them. No manual exports.
+					from ChatGPT, Claude, and Gemini as you use them. No manual exports.
 				</p>
 			</div>
 
@@ -31,20 +31,21 @@
 			</div>
 
 			<div class="feature reveal reveal-delay-3">
-				<div class="feature-tag">Reflection</div>
+				<div class="feature-tag">Context</div>
 				<h3>13 MCP tools for Claude Desktop</h3>
 				<p>
-					Search conversations, pull topic trends, view relationship timelines, analyze
-					sentiment over time, and trigger Obsidian write-back. All from inside Claude Desktop.
+					Search conversations, explore topic trends, view relationship timelines, track
+					emotions over time, and save reflections. All from inside Claude Desktop.
 				</p>
 			</div>
 
 			<div class="feature reveal reveal-delay-4">
-				<div class="feature-tag">Life Dimensions</div>
-				<h3>Track 7 areas of your life</h3>
+				<div class="feature-tag">People</div>
+				<h3>Understand your relationships</h3>
 				<p>
-					Career, Relationships, Health, Personal Growth, Creativity, Finances, Purpose.
-					retrace maps conversations to dimensions so you can see where your attention actually goes.
+					See the full timeline of conversations with any person across every platform.
+					Topics, emotions, and frequency over time. Your relationships have a shape.
+					Retrace makes it visible.
 				</p>
 			</div>
 
@@ -52,7 +53,7 @@
 				<div class="feature-tag">Obsidian</div>
 				<h3>Enrich notes with real evidence</h3>
 				<p>
-					retrace enriches Obsidian notes with conversation evidence using callout blocks.
+					Retrace enriches Obsidian notes with conversation evidence using callout blocks.
 					Cross-reference what your notes claim with what you actually said. Preview before writing.
 				</p>
 			</div>
@@ -61,8 +62,9 @@
 				<div class="feature-tag">Privacy</div>
 				<h3>Local AI, zero cloud</h3>
 				<p>
-					All embedding and analysis runs locally. No account required. No telemetry.
-					One SQLite file. The Chrome extension only reads from your logged-in browser session.
+					Embedding and LLM analysis run entirely on-device. Choose your model size.
+					No account required. No telemetry. One SQLite file. The Chrome extension
+					only reads from your logged-in browser session.
 				</p>
 			</div>
 		</div>
