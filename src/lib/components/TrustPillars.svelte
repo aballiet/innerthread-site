@@ -18,9 +18,9 @@
 				</div>
 				<h3>Your data never leaves your machine.</h3>
 				<p>
-					retrace runs entirely on your Mac. No cloud sync. No accounts. No telemetry.
-					The Chrome extension reads conversations from your browser and writes them to
-					a local SQLite database. That is the full data path.
+					Retrace runs entirely on your Mac. No cloud sync. No accounts. No telemetry.
+					The browser extension reads conversations. File imports are parsed locally.
+					The local LLM processes everything on your hardware. That is the full data path.
 				</p>
 				<div class="pillar-detail">
 					<code>~/Library/Application Support/retrace/data.db</code>
@@ -41,7 +41,7 @@
 				</div>
 				<h3>Native macOS, not Electron.</h3>
 				<p>
-					retrace is built with Tauri v2. It uses a fraction of the memory Electron apps
+					Retrace is built with Tauri v2. It uses a fraction of the memory Electron apps
 					consume, starts faster, and integrates properly with macOS. Standard .dmg install.
 					Nothing unusual in your system.
 				</p>

@@ -11,14 +11,15 @@
 				You map out a health goal with Claude. Each contains real insight. None of them connect.
 			</p>
 			<p class="reveal reveal-delay-2">
-				Existing journaling apps start from a blank page. You have to remember to journal,
-				then type it all again. retrace starts from <em>what you actually said.</em>
+				Your calendar shows what you did. Your journal shows what you thought.
+				Your messages show what you said. Your AI conversations show how you reasoned.
+				No single app holds the full picture. Retrace <em>connects all of them.</em>
 			</p>
 		</div>
 
 		<div class="platforms" use:inview>
 			<div class="platform-group reveal reveal-delay-1">
-				<div class="group-label">Auto-sync via Chrome</div>
+				<div class="group-label">Browser extension</div>
 				<div class="group-items">
 					<div class="platform">
 						<div class="platform-icon">
@@ -36,11 +37,19 @@
 						</div>
 						<span>Claude</span>
 					</div>
+					<div class="platform">
+						<div class="platform-icon">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+								<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<span>Gemini</span>
+					</div>
 				</div>
 			</div>
 
 			<div class="platform-group reveal reveal-delay-2">
-				<div class="group-label">File import</div>
+				<div class="group-label">Import</div>
 				<div class="group-items">
 					<div class="platform">
 						<div class="platform-icon">
@@ -53,10 +62,35 @@
 					<div class="platform">
 						<div class="platform-icon">
 							<svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-								<path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
 						</div>
-						<span>Messenger</span>
+						<span>Keep</span>
+					</div>
+					<div class="platform">
+						<div class="platform-icon">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+								<rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+								<path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+							</svg>
+						</div>
+						<span>Calendar</span>
+					</div>
+				</div>
+				<div class="group-extra">+SMS, Instagram</div>
+			</div>
+
+			<div class="platform-group reveal reveal-delay-2">
+				<div class="group-label">Filesystem</div>
+				<div class="group-items">
+					<div class="platform">
+						<div class="platform-icon">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+								<path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<span>Obsidian</span>
 					</div>
 				</div>
 			</div>
@@ -76,7 +110,7 @@
 						<path d="M16 6c-2 4-2 8 0 12" stroke="var(--color-accent-light)" stroke-width="1.5" stroke-linecap="round"/>
 					</svg>
 				</div>
-				<span>retrace</span>
+				<span>Retrace</span>
 			</div>
 		</div>
 	</div>
@@ -140,6 +174,12 @@
 		letter-spacing: 0.06em;
 		text-transform: uppercase;
 		color: var(--color-text-faint);
+	}
+
+	.group-extra {
+		font-size: 0.75rem;
+		color: var(--color-text-faint);
+		font-weight: 450;
 	}
 
 	.group-items {

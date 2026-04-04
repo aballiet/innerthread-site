@@ -6,10 +6,11 @@
 	<div class="container">
 		<div class="section-intro" use:inview>
 			<p class="section-tag reveal">Model Context Protocol</p>
-			<h2 class="reveal reveal-delay-1">retrace turns Claude Desktop<br /><span class="highlight">into your personal analyst.</span></h2>
+			<h2 class="reveal reveal-delay-1">Retrace turns Claude Desktop<br /><span class="highlight">into your personal analyst.</span></h2>
 			<p class="intro-body reveal reveal-delay-2">
-				13 MCP tools expose your local conversation database directly to Claude Desktop.
-				No API calls. No extra costs. If you have Claude Pro, you already have everything you need.
+				13 MCP tools expose your local context layer to Claude Desktop. Pre-processed
+				summaries, topics, emotions, and embeddings. No API calls. No extra costs.
+				If you have Claude Pro, you already have everything you need.
 			</p>
 		</div>
 
@@ -68,8 +69,8 @@
 							<span class="tool-desc">save reflection to Obsidian</span>
 						</div>
 						<div class="tool-item">
-							<span class="tool-name">get_conversation_stats</span>
-							<span class="tool-desc">per-platform message counts</span>
+							<span class="tool-name">list_notes</span>
+							<span class="tool-desc">browse Keep and Obsidian notes</span>
 						</div>
 					</div>
 				</div>

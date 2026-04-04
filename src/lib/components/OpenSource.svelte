@@ -9,11 +9,12 @@
 				<p class="cta-tag">Open Source</p>
 				<h2>Built for people who own their tools.</h2>
 				<p class="cta-desc">
-					retrace is free and MIT licensed. Download the macOS app, install the Chrome extension,
-					and you are running in under five minutes. No account. No subscription. No API key.
+					Retrace is free and MIT licensed. Download the macOS app, install the Chrome extension,
+					and you are running in under five minutes. A read-only CLI is included for terminal users.
+					No account. No subscription. No API key.
 				</p>
 				<div class="download-block">
-					<a href="https://github.com/aballiet/innerthread/releases/latest" target="_blank" rel="noopener" class="btn btn-primary btn-download">
+					<a href="https://github.com/aballiet/retrace/releases/latest" target="_blank" rel="noopener" class="btn btn-primary btn-download">
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
 							<path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm-.75 3v5.25H8.5l3.5 3.5 3.5-3.5h-2.75V7h-1.5z"/>
 						</svg>
@@ -23,13 +24,13 @@
 						</span>
 					</a>
 					<div class="secondary-actions">
-						<a href="https://github.com/aballiet/innerthread" target="_blank" rel="noopener" class="btn btn-secondary">
+						<a href="https://github.com/aballiet/retrace" target="_blank" rel="noopener" class="btn btn-secondary">
 							<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
 								<path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
 							</svg>
 							View on GitHub
 						</a>
-						<a href="https://github.com/aballiet/innerthread/blob/main/docs/architecture.md" target="_blank" rel="noopener" class="btn btn-secondary">
+						<a href="https://github.com/aballiet/retrace/blob/main/docs/architecture.md" target="_blank" rel="noopener" class="btn btn-secondary">
 							Read the Docs
 						</a>
 					</div>
@@ -59,8 +60,8 @@
 				<span class="stat-label">Licensed</span>
 			</div>
 			<div class="stat reveal reveal-delay-4">
-				<span class="stat-value">4</span>
-				<span class="stat-label">Platforms</span>
+				<span class="stat-value">9</span>
+				<span class="stat-label">Sources</span>
 			</div>
 		</div>
 	</div>
