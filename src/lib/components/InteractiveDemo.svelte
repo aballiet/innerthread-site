@@ -23,7 +23,7 @@
 				<span class="demo-frame__dot demo-frame__dot--red"></span>
 				<span class="demo-frame__dot demo-frame__dot--yellow"></span>
 				<span class="demo-frame__dot demo-frame__dot--green"></span>
-				<span class="demo-frame__titlebar-text">retrace</span>
+				<span class="demo-frame__titlebar-text">Retrace</span>
 			</div>
 			<div class="demo-frame__content">
 				{#if !loaded}
