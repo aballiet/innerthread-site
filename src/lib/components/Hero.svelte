@@ -138,7 +138,7 @@
 		display: flex;
 		gap: var(--space-md);
 		flex-wrap: wrap;
-		align-items: center;
+		align-items: flex-start;
 	}
 
 	.cta-sub {
@@ -169,6 +169,7 @@
 	.btn-primary {
 		background: var(--color-primary);
 		color: var(--color-bg);
+		border: 1px solid transparent;
 	}
 
 	.btn-primary:hover {
