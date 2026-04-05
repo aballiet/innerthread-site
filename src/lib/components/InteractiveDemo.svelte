@@ -36,7 +36,6 @@
 					src="/demo/"
 					title="Retrace interactive demo"
 					loading="lazy"
-					sandbox="allow-scripts allow-same-origin"
 					on:load={onLoad}
 					class:demo-frame__iframe--loaded={loaded}
 				></iframe>
