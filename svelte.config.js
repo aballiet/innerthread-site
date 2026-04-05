@@ -9,7 +9,14 @@ const config = {
 			fallback: null,
 			precompress: false,
 			strict: true
-		})
+		}),
+		prerender: {
+			handleHttpError: ({ path }) => {
+				// The /demo/ iframe content is served from static/ and not a SvelteKit route
+				if (path.startsWith('/demo')) return;
+				throw new Error(`404 ${path}`);
+			}
+		}
 	}
 };
 
