@@ -28,20 +28,24 @@
 				Desktop via MCP. No cloud. No API costs. Context, not destination.
 			</p>
 			<div class="hero-ctas reveal reveal-delay-3">
-				<a href="#download" class="btn btn-primary">
-					<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-						<path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm-1 4v4H8l4 4 4-4h-3V8h-2z"/>
-					</svg>
-					Download for macOS
-				</a>
-				<a href="#demo" class="btn btn-secondary">
-					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-						<polygon points="5 3 19 12 5 21 5 3" />
-					</svg>
-					See it live
-				</a>
+				<div class="hero-ctas__buttons">
+					<div class="hero-ctas__primary">
+						<a href="#download" class="btn btn-primary">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm-1 4v4H8l4 4 4-4h-3V8h-2z"/>
+							</svg>
+							Download for macOS
+						</a>
+						<span class="cta-sub">Free &middot; Open source &middot; macOS 12+</span>
+					</div>
+					<a href="#demo" class="btn btn-secondary">
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<polygon points="5 3 19 12 5 21 5 3" />
+						</svg>
+						See it live
+					</a>
+				</div>
 			</div>
-			<span class="cta-sub reveal reveal-delay-3">Free &middot; Open source &middot; macOS 12+</span>
 		</div>
 	</div>
 </section>
@@ -130,7 +134,7 @@
 		max-width: 620px;
 	}
 
-	.hero-ctas {
+	.hero-ctas__buttons {
 		display: flex;
 		gap: var(--space-md);
 		flex-wrap: wrap;
@@ -141,7 +145,13 @@
 		display: block;
 		font-size: 0.8rem;
 		color: var(--color-text-faint);
-		margin-top: var(--space-md);
+		margin-top: var(--space-sm);
+	}
+
+	.hero-ctas__primary {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.btn {
@@ -189,7 +199,7 @@
 			padding-bottom: var(--space-4xl);
 		}
 
-		.hero-ctas {
+		.hero-ctas__buttons {
 			flex-direction: column;
 		}
 
