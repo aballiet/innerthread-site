@@ -34,16 +34,14 @@
 					</svg>
 					Download for macOS
 				</a>
-				<div class="cta-stack">
-					<a href="#demo" class="btn btn-secondary">
-						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<polygon points="5 3 19 12 5 21 5 3" />
-						</svg>
-						See it live
-					</a>
-					<span class="cta-sub">Free &middot; Open source &middot; macOS 12+</span>
-				</div>
+				<a href="#demo" class="btn btn-secondary">
+					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<polygon points="5 3 19 12 5 21 5 3" />
+					</svg>
+					See it live
+				</a>
 			</div>
+			<span class="cta-sub reveal reveal-delay-3">Free &middot; Open source &middot; macOS 12+</span>
 		</div>
 	</div>
 </section>
@@ -136,19 +134,14 @@
 		display: flex;
 		gap: var(--space-md);
 		flex-wrap: wrap;
-		align-items: flex-start;
-	}
-
-	.cta-stack {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-sm);
+		align-items: center;
 	}
 
 	.cta-sub {
+		display: block;
 		font-size: 0.8rem;
 		color: var(--color-text-faint);
-		padding-left: var(--space-sm);
+		margin-top: var(--space-md);
 	}
 
 	.btn {
@@ -202,10 +195,6 @@
 
 		.btn {
 			justify-content: center;
-		}
-
-		.cta-stack {
-			align-items: center;
 		}
 	}
 </style>
