@@ -24,18 +24,30 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install site dependencies
         run: npm ci
 
-      - name: Build
+      - name: Install docs dependencies
+        run: cd docs && npm ci
+
+      - name: Build marketing site (Astro)
         run: npm run build
+
+      - name: Build docs (Fumadocs)
+        run: cd docs && npm run build
+
+      - name: Merge docs into site output
+        run: |
+          mkdir -p dist/docs
+          cp -r docs/out/docs/* dist/docs/
+          cp -r docs/out/_next dist/docs/_next
+          cp docs/out/docs.html dist/docs/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'build'
+          path: 'dist'
 
   deploy:
     environment:

@@ -1,0 +1,41 @@
+---
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const {
+	title = 'Retrace - your personal context layer',
+	description = 'Retrace - a local-first personal context layer. Reads from ChatGPT, Claude, WhatsApp, Obsidian, and more. Your data stays on your machine. You choose what leaves.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<meta name="description" content={description} />
+		<meta property="og:title" content="Retrace" />
+		<meta property="og:description" content="Your life is scattered across apps that don't talk to each other. Retrace connects all of them." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://retrace.now" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Retrace" />
+		<meta name="twitter:description" content="Your life is scattered across apps that don't talk to each other. Retrace connects all of them." />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Nav />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+		<script src="../scripts/inview.js"></script>
+	</body>
+</html>
