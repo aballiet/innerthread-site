@@ -18,25 +18,19 @@
 		<div class="hero-text" use:inview={{ threshold: 0.1 }}>
 			<p class="hero-tag reveal">Native macOS App &middot; Local-first &middot; Open Source</p>
 			<h1 class="reveal reveal-delay-1">
-				Your scattered conversations,<br />
-				<span class="highlight">rewoven into self-knowledge.</span>
+				Your conversations,<br /><span class="highlight">rewoven into self-knowledge.</span>
 			</h1>
 			<p class="hero-sub reveal reveal-delay-2">
-				Your data is locked in platforms you don't control. Retrace helps you take it back.
-				Browse, search, and reflect across every conversation you've ever had.
-				Your data stays on your machine. You choose what leaves.
+				Retrace connects your scattered conversations across every platform into one searchable, reflective space. Your data stays on your machine.
 			</p>
 			<div class="hero-ctas reveal reveal-delay-3">
 				<div class="hero-ctas__buttons">
-					<div class="hero-ctas__primary">
-						<a href="#demo" class="btn btn-primary">
-							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<polygon points="5 3 19 12 5 21 5 3" />
-							</svg>
-							See it live
-						</a>
-						<span class="cta-sub">Interactive demo &middot; No download required</span>
-					</div>
+					<a href="#demo" class="btn btn-primary">
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<polygon points="5 3 19 12 5 21 5 3" />
+						</svg>
+						See it live
+					</a>
 					<a href="https://github.com/aballiet/retrace" target="_blank" rel="noopener" class="btn btn-secondary">
 						<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
 							<path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
@@ -44,6 +38,7 @@
 						View on GitHub
 					</a>
 				</div>
+				<span class="cta-sub">Interactive demo &middot; No download required</span>
 			</div>
 		</div>
 	</div>
@@ -97,13 +92,9 @@
 	}
 
 	.hero-text {
-		max-width: 740px;
-	}
-
-	@media (max-width: 768px) {
-		.hero-text {
-			text-align: center;
-		}
+		max-width: 780px;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 	.hero-tag {
@@ -123,6 +114,7 @@
 		letter-spacing: -0.03em;
 		color: var(--color-text);
 		margin-bottom: var(--space-xl);
+		text-wrap: balance;
 	}
 
 	.highlight {
@@ -137,13 +129,17 @@
 		line-height: 1.7;
 		color: var(--color-text-muted);
 		margin-bottom: var(--space-2xl);
-		max-width: 620px;
+		max-width: 560px;
+		margin-left: auto;
+		margin-right: auto;
+		text-wrap: balance;
 	}
 
 	.hero-ctas__buttons {
 		display: flex;
 		gap: var(--space-md);
 		flex-wrap: wrap;
+		justify-content: center;
 		align-items: flex-start;
 	}
 
@@ -154,10 +150,11 @@
 		margin-top: var(--space-sm);
 	}
 
-	.hero-ctas__primary {
+	.hero-ctas {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		gap: var(--space-sm);
 	}
 
 	.btn {
@@ -213,11 +210,6 @@
 
 		.btn {
 			justify-content: center;
-			width: 100%;
-			max-width: 280px;
-		}
-
-		.hero-ctas__primary {
 			width: 100%;
 			max-width: 280px;
 		}

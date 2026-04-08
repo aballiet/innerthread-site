@@ -24,7 +24,7 @@
 		<div class="showcase-grid" use:inview>
 			<a href="/features#search" class="showcase-card showcase-search reveal reveal-delay-1">
 				<span class="showcase-tag">Search</span>
-				<h3>Find anything you ever said</h3>
+				<h3>Search across every conversation</h3>
 				<p class="showcase-desc">Semantic search across every platform. Find conversations by meaning, not just keywords.</p>
 				<div class="showcase-visual">
 					<div class="mini-search">
@@ -114,7 +114,7 @@
 
 			<a href="/features#chat" class="showcase-card showcase-chat reveal reveal-delay-4">
 				<span class="showcase-tag">Chat</span>
-				<h3>Ask Claude about your life</h3>
+				<h3>Reflect with Claude</h3>
 				<p class="showcase-desc">Claude sees only what you allow. Explore your history or reflect on it.</p>
 				<div class="showcase-visual">
 					<div class="mini-chat">
