@@ -5,15 +5,18 @@
 <section class="problem">
 	<div class="container">
 		<div class="problem-content" use:inview>
-			<h2 class="reveal">Your thinking is scattered<br /><span class="highlight">across platforms that don't talk.</span></h2>
+			<h2 class="reveal">You're sitting on years of insight.<br /><span class="highlight">It's locked in platforms you don't control.</span></h2>
 			<p class="reveal reveal-delay-1">
-				You work through a career decision in ChatGPT. You vent to a friend on WhatsApp.
-				You map out a health goal with Claude. Each contains real insight. None of them connect.
+				Meta has your Messenger and Instagram archives since 2010. Google has your Keep notes,
+				your calendar, your search history. OpenAI has every question you ever asked ChatGPT.
+				Your most personal thinking lives on their servers, for their benefit, not yours.
 			</p>
 			<p class="reveal reveal-delay-2">
-				Your calendar shows what you did. Your journal shows what you thought.
-				Your messages show what you said. Your AI conversations show how you reasoned.
-				No single app holds the full picture. Retrace <em>connects all of them.</em>
+				Retrace helps you take it back. Export your data, import it locally, and for the
+				first time see the full picture. Browse years of conversations in one place.
+				Rediscover interactions you forgot, decisions you made, people who shaped your
+				thinking. <em>Your conversations become your journal, your timeline, your
+				searchable memory.</em>
 			</p>
 		</div>
 

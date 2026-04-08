@@ -5,9 +5,9 @@
 <section id="features" class="features">
 	<div class="container">
 		<div class="section-header" use:inview>
-			<h2 class="reveal">Everything Retrace <span class="highlight">can do.</span></h2>
+			<h2 class="reveal">Explore, rediscover, <span class="highlight">reflect.</span></h2>
 			<p class="reveal reveal-delay-1">
-				Built for people who want to understand their own thinking across every platform they use.
+				Browse old conversations. Find forgotten moments. See patterns across platforms. Reflect when you're ready.
 			</p>
 		</div>
 
@@ -16,9 +16,9 @@
 				<div class="feature-tag">Chat</div>
 				<h3>Claude embedded in the app</h3>
 				<p>
-					Claude lives inside Retrace with full access to your conversations, topics, and people.
-					Ask about patterns in your life, reflect on relationships, or explore decisions you made.
-					Uses your existing Claude subscription via the Agent SDK.
+					Claude lives inside Retrace and sees only what you allow. Use labels to give it
+					access to the topics that matter. Ask about patterns, reflect on relationships,
+					explore decisions. Your existing subscription via the Agent SDK.
 				</p>
 			</div>
 
@@ -26,48 +26,63 @@
 				<div class="feature-tag">Network</div>
 				<h3>See your social graph</h3>
 				<p>
-					An interactive force-directed graph visualizes your relationships with
-					tie-strength scoring. Watch connections form over time with timelapse animation.
-					Dunbar-inspired tiers from inner circle to periphery.
+					Force-directed visualization of your relationships. Tie-strength scoring
+					reveals your inner circle. Timelapse shows connections forming over months.
 				</p>
 			</div>
 
 			<div class="feature reveal reveal-delay-3">
+				<div class="feature-tag">Search</div>
+				<h3>Find anything you ever said</h3>
+				<p>
+					Search by meaning, not just keywords. "That restaurant someone recommended
+					last summer" works. 384-dimensional embeddings across all platforms in one query.
+				</p>
+			</div>
+
+			<div class="feature reveal reveal-delay-4">
+				<div class="feature-tag">Capsules</div>
+				<h3>This time last year</h3>
+				<p>
+					Rediscover what you were thinking, feeling, and doing a year ago. AI-powered
+					then-and-now comparisons surface what's changed, what echoes, and what you
+					forgot entirely.
+				</p>
+			</div>
+
+			<div class="feature reveal reveal-delay-1">
+				<div class="feature-tag">Rivers</div>
+				<h3>Watch your life flow</h3>
+				<p>
+					Streamgraph visualization of conversations over time, colored by person or topic.
+					See where your attention goes and how it shifts.
+				</p>
+			</div>
+
+			<div class="feature reveal reveal-delay-2">
 				<div class="feature-tag">Sync</div>
 				<h3>Set and forget with Chrome</h3>
 				<p>
-					The browser extension syncs ChatGPT and Claude conversations in the background.
-					It also scrapes profile pictures from Messenger, WhatsApp, and Instagram
-					as you browse. WhatsApp connects live via QR code for real-time messages.
-				</p>
-			</div>
-
-			<div class="feature reveal reveal-delay-4">
-				<div class="feature-tag">Search</div>
-				<h3>Semantic and keyword hybrid</h3>
-				<p>
-					Find conversations by meaning, not just keywords. Powered by sqlite-vec
-					with 384-dimensional embeddings. Searches across all platforms in a single query.
+					Background syncs ChatGPT and Claude. Scrapes profile pictures from Messenger,
+					WhatsApp, Instagram. WhatsApp connects live via QR.
 				</p>
 			</div>
 
 			<div class="feature reveal reveal-delay-3">
-				<div class="feature-tag">Reflect</div>
-				<h3>Time Capsules and reflections</h3>
+				<div class="feature-tag">Scope</div>
+				<h3>Labels and permissions</h3>
 				<p>
-					"This time last year" comparisons surface how your thinking evolved.
-					Guided reflection sessions produce structured notes with source references.
-					Reflections sync to Obsidian and build on each other over time.
+					Tag conversations with labels. Set allow/block rules per consumer. Your private
+					conversations stay private, even from your own agents.
 				</p>
 			</div>
 
 			<div class="feature reveal reveal-delay-4">
-				<div class="feature-tag">Scope</div>
-				<h3>Labels and permissions</h3>
+				<div class="feature-tag">Write-back</div>
+				<h3>Enriches your existing tools</h3>
 				<p>
-					Tag conversations with labels (platform, topic, or custom). Set allow/block
-					rules per consumer to control what the embedded chat or MCP server can access.
-					Your private conversations stay private, even from your own agents.
+					Reflections sync to Obsidian as structured callout blocks with source evidence.
+					Retrace makes your vault smarter, never replaces it.
 				</p>
 			</div>
 		</div>
@@ -100,7 +115,7 @@
 
 	.feature-grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		gap: var(--space-xl);
 	}
 
@@ -162,15 +177,19 @@
 		line-height: 1.7;
 	}
 
-	@media (max-width: 900px) {
+	@media (max-width: 1100px) {
 		.feature-grid {
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 640px) {
 		.feature-grid {
 			grid-template-columns: 1fr;
+		}
+
+		.feature {
+			padding: var(--space-xl);
 		}
 	}
 </style>

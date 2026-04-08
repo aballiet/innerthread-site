@@ -17,10 +17,10 @@
 			<div class="footer-links">
 				<div class="footer-col">
 					<h4>Product</h4>
-					<a href="#how-it-works">How It Works</a>
-					<a href="#features">Features</a>
-					<a href="#privacy">Privacy</a>
-					<a href="#download">Download</a>
+					<a href="/features">Features</a>
+					<a href="/sources">Sources</a>
+					<a href="/privacy">Privacy</a>
+					<a href="/get-started">Get Started</a>
 				</div>
 				<div class="footer-col">
 					<h4>Community</h4>

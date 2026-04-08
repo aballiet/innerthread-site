@@ -7,20 +7,20 @@
 		<div class="cta-card" use:inview>
 			<div class="cta-content reveal">
 				<p class="cta-tag">Open Source</p>
-				<h2>Built for people who own their tools.</h2>
+				<h2>Built for people who think carefully.</h2>
 				<p class="cta-desc">
-					Retrace is free and MIT licensed. Download the macOS app, install the Chrome extension,
-					and you are running in under five minutes. Claude is embedded in the app using
-					your existing subscription. No account. No API key.
+					Retrace is free and MIT licensed. Try the interactive demo, explore the
+					source code, or star the repo to follow development. Claude is embedded
+					using your existing subscription. No account. No API key. No vendor lock-in.
 				</p>
 				<div class="download-block">
-					<a href="https://github.com/aballiet/retrace/releases/latest" target="_blank" rel="noopener" class="btn btn-primary btn-download">
-						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-							<path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm-.75 3v5.25H8.5l3.5 3.5 3.5-3.5h-2.75V7h-1.5z"/>
+					<a href="#demo" class="btn btn-primary btn-download">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<polygon points="5 3 19 12 5 21 5 3" />
 						</svg>
 						<span class="btn-label">
-							Download for macOS
-							<span class="btn-sub">Free &middot; Open source &middot; macOS 12+</span>
+							Try the live demo
+							<span class="btn-sub">Interactive &middot; No download required</span>
 						</span>
 					</a>
 					<div class="secondary-actions">
@@ -34,14 +34,6 @@
 							Read the Docs
 						</a>
 					</div>
-					<p class="chrome-note">
-						<svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-							<circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
-							<circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
-							<path d="M12 8V2M12 8a4 4 0 014 4h6M12 8a4 4 0 00-4 4H2" stroke="currentColor" stroke-width="1.5"/>
-						</svg>
-						Chrome extension available on the GitHub releases page
-					</p>
 				</div>
 			</div>
 		</div>
@@ -61,7 +53,7 @@
 			</div>
 			<div class="stat reveal reveal-delay-4">
 				<span class="stat-value">100%</span>
-				<span class="stat-label">Local</span>
+				<span class="stat-label">Your data</span>
 			</div>
 		</div>
 	</div>
@@ -207,6 +199,18 @@
 		font-size: 0.85rem;
 		color: var(--color-text-faint);
 		font-weight: 450;
+	}
+
+	@media (max-width: 768px) {
+		.btn {
+			min-height: 44px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.cta-content {
+			padding: var(--space-xl);
+		}
 	}
 
 	@media (max-width: 768px) {

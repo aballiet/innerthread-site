@@ -3,13 +3,14 @@
  * Usage: <div use:inview>...</div>
  */
 export function inview(node, params = {}) {
-	const { threshold = 0.15, once = true } = params;
+	const { threshold = 0.15, once = true, callback } = params;
 
 	const observer = new IntersectionObserver(
 		(entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					node.classList.add('visible');
+					if (callback) callback();
 					if (once) {
 						observer.unobserve(node);
 					}

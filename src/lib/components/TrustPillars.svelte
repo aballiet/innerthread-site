@@ -5,7 +5,7 @@
 <section id="privacy" class="trust">
 	<div class="container">
 		<div class="section-header" use:inview>
-			<h2 class="reveal">Built on principles, <span class="highlight">not promises.</span></h2>
+			<h2 class="reveal">Your data. Your machine. <span class="highlight">No exceptions.</span></h2>
 		</div>
 
 		<div class="pillars" use:inview>
@@ -16,11 +16,12 @@
 						<path d="M9 12l2 2 4-4" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
 				</div>
-				<h3>Your data never leaves your machine.</h3>
+				<h3>Your data is stored locally. Always.</h3>
 				<p>
-					Retrace runs entirely on your Mac. No cloud sync. No accounts. No telemetry.
-					The browser extension reads conversations. File imports are parsed locally.
-					The local LLM processes everything on your hardware. That is the full data path.
+					SQLite database in <code>~/.retrace/</code>. No accounts, no telemetry.
+					Conversations, topics, embeddings, reflections are all stored on your laptop.
+					When you use Claude or Gemini for reflection, you control exactly what they
+					can access through labels and permissions.
 				</p>
 				<div class="pillar-detail">
 					<code>~/.retrace/retrace.db</code>
@@ -58,8 +59,9 @@
 				</div>
 				<h3>Open source, forever.</h3>
 				<p>
-					MIT licensed. No vendor lock-in. Read the code, audit the Chrome extension,
-					fork it, extend it. Your reflection infrastructure should not be a SaaS black box.
+					MIT licensed. No VC funding. No growth targets. Read the code, audit the
+					extension, fork it, build on it. Your reflection infrastructure should
+					never be a black box.
 				</p>
 				<div class="pillar-detail">
 					<span>MIT licensed &middot; No VC funding &middot; No growth targets</span>

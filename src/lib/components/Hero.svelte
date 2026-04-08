@@ -18,31 +18,30 @@
 		<div class="hero-text" use:inview={{ threshold: 0.1 }}>
 			<p class="hero-tag reveal">Native macOS App &middot; Local-first &middot; Open Source</p>
 			<h1 class="reveal reveal-delay-1">
-				Your life is scattered across apps<br />
-				<span class="highlight">that don't talk to each other.</span>
+				Your scattered conversations,<br />
+				<span class="highlight">rewoven into self-knowledge.</span>
 			</h1>
 			<p class="hero-sub reveal reveal-delay-2">
-				Retrace reads from everywhere you think and write. ChatGPT, Claude,
-				WhatsApp, Messenger, Obsidian, Google Calendar, Keep, SMS, Instagram.
-				It processes everything with on-device AI, then lets you reflect with
-				Claude embedded directly in the app. No cloud. No API costs.
+				Your data is locked in platforms you don't control. Retrace helps you take it back.
+				Browse, search, and reflect across every conversation you've ever had.
+				Your data stays on your machine. You choose what leaves.
 			</p>
 			<div class="hero-ctas reveal reveal-delay-3">
 				<div class="hero-ctas__buttons">
 					<div class="hero-ctas__primary">
-						<a href="#download" class="btn btn-primary">
-							<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-								<path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm-1 4v4H8l4 4 4-4h-3V8h-2z"/>
+						<a href="#demo" class="btn btn-primary">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<polygon points="5 3 19 12 5 21 5 3" />
 							</svg>
-							Download for macOS
+							See it live
 						</a>
-						<span class="cta-sub">Free &middot; Open source &middot; macOS 12+</span>
+						<span class="cta-sub">Interactive demo &middot; No download required</span>
 					</div>
-					<a href="#demo" class="btn btn-secondary">
-						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<polygon points="5 3 19 12 5 21 5 3" />
+					<a href="https://github.com/aballiet/retrace" target="_blank" rel="noopener" class="btn btn-secondary">
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
 						</svg>
-						See it live
+						View on GitHub
 					</a>
 				</div>
 			</div>
@@ -54,6 +53,7 @@
 	.hero {
 		position: relative;
 		min-height: 100vh;
+		min-height: 100dvh;
 		display: flex;
 		align-items: center;
 		padding-top: 80px;
@@ -98,6 +98,12 @@
 
 	.hero-text {
 		max-width: 740px;
+	}
+
+	@media (max-width: 768px) {
+		.hero-text {
+			text-align: center;
+		}
 	}
 
 	.hero-tag {
@@ -196,16 +202,39 @@
 	@media (max-width: 768px) {
 		.hero {
 			min-height: auto;
-			padding-top: 120px;
-			padding-bottom: var(--space-4xl);
+			padding-top: 100px;
+			padding-bottom: var(--space-3xl);
 		}
 
 		.hero-ctas__buttons {
 			flex-direction: column;
+			align-items: center;
 		}
 
 		.btn {
 			justify-content: center;
+			width: 100%;
+			max-width: 280px;
+		}
+
+		.hero-ctas__primary {
+			width: 100%;
+			max-width: 280px;
+		}
+
+		.hero-sub {
+			font-size: 1rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.hero {
+			padding-top: 90px;
+			padding-bottom: var(--space-2xl);
+		}
+
+		.cta-sub {
+			font-size: 0.75rem;
 		}
 	}
 </style>

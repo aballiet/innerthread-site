@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="section-header" use:inview>
 			<p class="section-tag reveal">Coming soon</p>
-			<h2 class="reveal reveal-delay-1">Your context layer, <span class="highlight">in your pocket.</span></h2>
+			<h2 class="reveal reveal-delay-1">Your context layer, <span class="highlight">anywhere.</span></h2>
 			<p class="intro reveal reveal-delay-2">
 				The phone is not where you manage data. It is where Retrace sends you
 				something prepared, and you respond to it. Fully offline. No server needed.

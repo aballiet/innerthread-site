@@ -6,11 +6,12 @@
 	<div class="container">
 		<div class="section-intro" use:inview>
 			<p class="section-tag reveal">Embedded Intelligence</p>
-			<h2 class="reveal reveal-delay-1">Claude sees your whole life.<br /><span class="highlight">You just ask.</span></h2>
+			<h2 class="reveal reveal-delay-1">Ask anything about your life.<br /><span class="highlight">Claude already has the context.</span></h2>
 			<p class="intro-body reveal reveal-delay-2">
-				Claude is embedded in Retrace via the Agent SDK with in-process access to your
-				conversations, topics, people, and search. Also available as an MCP server for
-				Claude Desktop. Uses your existing Claude subscription. No API key needed.
+				"What was I obsessing about last March?" "Who introduced me to that idea?"
+				Claude is embedded via the Agent SDK. You choose what it can see using labels
+				and permission rules. Explore your own history or reflect on it. Your existing
+				Claude subscription. No API key. No per-token cost.
 			</p>
 		</div>
 

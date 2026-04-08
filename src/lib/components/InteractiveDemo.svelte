@@ -1,10 +1,24 @@
 <script>
 	import { inview } from '$lib/actions/inview.js';
 
-	let loaded = false;
+	let loaded = $state(false);
+	let failed = $state(false);
+	let visible = $state(false);
 
-	function onLoad() {
+	function onIframeLoad() {
 		loaded = true;
+	}
+
+	function onVisible() {
+		if (visible) return;
+		visible = true;
+		setTimeout(() => {
+			if (!loaded) loaded = true;
+		}, 8000);
+	}
+
+	function onError() {
+		failed = true;
 	}
 </script>
 
@@ -18,7 +32,7 @@
 		</div>
 
 		<!-- Desktop: embedded iframe -->
-		<div class="demo-frame reveal reveal-delay-2" use:inview>
+		<div class="demo-frame reveal reveal-delay-2" use:inview={{ threshold: 0.05, once: true, callback: onVisible }}>
 			<div class="demo-frame__titlebar">
 				<span class="demo-frame__dot demo-frame__dot--red"></span>
 				<span class="demo-frame__dot demo-frame__dot--yellow"></span>
@@ -26,38 +40,56 @@
 				<span class="demo-frame__titlebar-text">Retrace</span>
 			</div>
 			<div class="demo-frame__content">
-				{#if !loaded}
+				{#if !loaded && !failed}
 					<div class="demo-frame__loading">
 						<div class="demo-frame__spinner"></div>
 						<span>Loading demo...</span>
 					</div>
 				{/if}
-				<iframe
-					src="/demo/"
-					title="Retrace interactive demo"
-					loading="lazy"
-					on:load={onLoad}
-					class:demo-frame__iframe--loaded={loaded}
-				></iframe>
+				{#if failed}
+					<div class="demo-frame__error">
+						<p>Demo failed to load.</p>
+						<a href="/demo/" target="_blank" rel="noopener" class="error-link">Open in a new tab &rarr;</a>
+					</div>
+				{:else if visible}
+					<iframe
+						src="/demo/"
+						title="Retrace interactive demo"
+						onload={onIframeLoad}
+						onerror={onError}
+						class:loaded
+					></iframe>
+				{/if}
 			</div>
 		</div>
 
 		<!-- Mobile: fallback -->
 		<div class="demo-mobile reveal reveal-delay-2" use:inview>
-			<p>The interactive demo works best on desktop.</p>
-			<a href="/demo/" target="_blank" rel="noopener" class="btn btn-secondary">
-				Open demo in new tab
+			<div class="demo-mobile__icon">
+				<svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+					<rect x="5" y="2" width="14" height="20" rx="2" stroke="var(--color-accent)" stroke-width="1.5"/>
+					<path d="M12 18h.01" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round"/>
+				</svg>
+			</div>
+			<p>The full interactive demo is designed for larger screens.</p>
+			<p class="demo-mobile__hint">Try it on your laptop or open it in landscape for a quick look.</p>
+			<a href="/demo/" target="_blank" rel="noopener" class="btn btn-primary-mobile">
+				Open demo
+				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<polyline points="15 3 21 3 21 9" />
+					<line x1="10" y1="14" x2="21" y2="3" />
+				</svg>
 			</a>
 		</div>
 
 		<div class="demo-cta reveal reveal-delay-3" use:inview>
-			<p class="demo-cta__text">Free, open source, runs entirely on your Mac.</p>
+			<p class="demo-cta__text">Free, open source, your data stays on your Mac.</p>
 			<div class="demo-cta__buttons">
-				<a href="#download" class="btn btn-primary">
+				<a href="https://github.com/aballiet/retrace" target="_blank" rel="noopener" class="btn btn-secondary">
 					<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-						<path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm-1 4v4H8l4 4 4-4h-3V8h-2z"/>
+						<path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
 					</svg>
-					Download for macOS
+					View on GitHub
 				</a>
 				<a href="/demo/" target="_blank" rel="noopener" class="btn btn-secondary">
 					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -65,7 +97,7 @@
 						<line x1="10" y1="14" x2="21" y2="3" />
 						<path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5" />
 					</svg>
-					Explore full demo
+					Open demo in new tab
 				</a>
 			</div>
 		</div>
@@ -73,10 +105,7 @@
 </section>
 
 <style>
-	.section-header {
-		text-align: center;
-		margin-bottom: var(--space-3xl);
-	}
+	.section-header { text-align: center; margin-bottom: var(--space-3xl); }
 
 	h2 {
 		font-size: clamp(1.75rem, 4vw, 2.75rem);
@@ -85,9 +114,7 @@
 		margin-bottom: var(--space-md);
 	}
 
-	.highlight {
-		color: var(--color-accent);
-	}
+	.highlight { color: var(--color-accent); }
 
 	.section-header p {
 		color: var(--color-text-muted);
@@ -115,12 +142,7 @@
 		border-bottom: 1px solid var(--color-border);
 	}
 
-	.demo-frame__dot {
-		width: 12px;
-		height: 12px;
-		border-radius: 50%;
-	}
-
+	.demo-frame__dot { width: 12px; height: 12px; border-radius: 50%; }
 	.demo-frame__dot--red { background: #ff5f57; }
 	.demo-frame__dot--yellow { background: #febc2e; }
 	.demo-frame__dot--green { background: #28c840; }
@@ -130,63 +152,37 @@
 		font-size: 0.8rem;
 		font-weight: 500;
 		color: var(--color-text-faint);
-		letter-spacing: 0.02em;
 	}
 
-	.demo-frame__content {
-		position: relative;
-		aspect-ratio: 16 / 10;
-	}
+	.demo-frame__content { position: relative; aspect-ratio: 16 / 10; }
 
 	.demo-frame__content iframe {
-		width: 100%;
-		height: 100%;
-		border: none;
-		opacity: 0;
-		transition: opacity var(--duration-normal) ease;
+		width: 100%; height: 100%; border: none;
+		opacity: 0; transition: opacity 0.4s ease;
 	}
 
-	.demo-frame__content iframe.demo-frame__iframe--loaded {
-		opacity: 1;
-	}
+	.demo-frame__content iframe.loaded { opacity: 1; }
 
-	.demo-frame__loading {
-		position: absolute;
-		inset: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: var(--space-md);
-		color: var(--color-text-faint);
-		font-size: 0.9rem;
+	.demo-frame__loading, .demo-frame__error {
+		position: absolute; inset: 0;
+		display: flex; flex-direction: column; align-items: center; justify-content: center;
+		gap: var(--space-md); color: var(--color-text-faint); font-size: 0.9rem;
 	}
 
 	.demo-frame__spinner {
-		width: 24px;
-		height: 24px;
+		width: 24px; height: 24px;
 		border: 2px solid var(--color-border);
 		border-top-color: var(--color-accent);
 		border-radius: 50%;
 		animation: spin 0.8s linear infinite;
 	}
 
-	@keyframes spin {
-		to { transform: rotate(360deg); }
-	}
+	@keyframes spin { to { transform: rotate(360deg); } }
 
-	.demo-caption {
-		text-align: center;
-		color: var(--color-text-faint);
-		font-size: 0.85rem;
-		margin-top: var(--space-lg);
-	}
+	.error-link { color: var(--color-accent); font-weight: 500; }
 
 	/* CTA below demo */
-	.demo-cta {
-		text-align: center;
-		margin-top: var(--space-2xl);
-	}
+	.demo-cta { text-align: center; margin-top: var(--space-2xl); }
 
 	.demo-cta__text {
 		color: var(--color-text-muted);
@@ -195,93 +191,57 @@
 	}
 
 	.demo-cta__buttons {
-		display: flex;
-		justify-content: center;
-		gap: var(--space-md);
-		flex-wrap: wrap;
+		display: flex; justify-content: center;
+		gap: var(--space-md); flex-wrap: wrap;
 	}
 
 	.demo-cta .btn {
-		display: inline-flex;
-		align-items: center;
-		gap: var(--space-sm);
-		padding: 0.8rem 1.5rem;
-		border-radius: var(--radius-full);
-		font-weight: 600;
-		font-size: 0.9rem;
+		display: inline-flex; align-items: center; gap: var(--space-sm);
+		padding: 0.8rem 1.5rem; border-radius: var(--radius-full);
+		font-weight: 600; font-size: 0.9rem;
 		transition: all var(--duration-fast) ease;
-		text-decoration: none;
-		white-space: nowrap;
-	}
-
-	.demo-cta .btn-primary {
-		background: var(--color-primary);
-		color: var(--color-bg);
-	}
-
-	.demo-cta .btn-primary:hover {
-		background: var(--color-text-muted);
-		color: var(--color-bg);
-		transform: translateY(-2px);
-		box-shadow: 0 8px 30px rgba(45, 42, 38, 0.15);
+		text-decoration: none; white-space: nowrap;
 	}
 
 	.demo-cta .btn-secondary {
-		background: var(--color-surface);
-		color: var(--color-text);
+		background: var(--color-surface); color: var(--color-text);
 		border: 1px solid var(--color-border);
 	}
 
 	.demo-cta .btn-secondary:hover {
-		background: var(--color-surface-hover);
-		border-color: var(--color-border-light);
-		transform: translateY(-2px);
-		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+		background: var(--color-surface-hover); border-color: var(--color-border-light);
+		transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
 	}
 
-	/* Mobile: hide iframe, show fallback */
+	/* Mobile fallback */
 	.demo-mobile {
-		display: none;
-		text-align: center;
-		padding: var(--space-2xl);
-		background: var(--color-surface);
-		border: 1px solid var(--color-border);
+		display: none; text-align: center; padding: var(--space-2xl);
+		background: var(--color-surface); border: 1px solid var(--color-border);
 		border-radius: var(--radius-lg);
 	}
 
-	.demo-mobile p {
-		color: var(--color-text-muted);
-		margin-bottom: var(--space-lg);
+	.demo-mobile__icon { margin-bottom: var(--space-md); }
+
+	.demo-mobile p { color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: var(--space-sm); }
+
+	.demo-mobile__hint {
+		font-size: 0.85rem !important; color: var(--color-text-faint) !important;
+		margin-bottom: var(--space-xl) !important;
 	}
 
-	.demo-mobile .btn {
-		display: inline-flex;
-		align-items: center;
-		gap: var(--space-sm);
-		padding: 0.75rem 1.5rem;
-		border-radius: var(--radius-full);
-		font-weight: 600;
-		font-size: 0.9rem;
-		background: var(--color-surface);
-		color: var(--color-text);
-		border: 1px solid var(--color-border);
+	.btn-primary-mobile {
+		display: inline-flex; align-items: center; gap: var(--space-sm);
+		padding: 0.85rem 1.75rem; border-radius: var(--radius-full);
+		font-weight: 600; font-size: 0.95rem;
+		background: var(--color-primary); color: var(--color-bg);
 		transition: all var(--duration-fast) ease;
-		text-decoration: none;
+		text-decoration: none; min-height: 44px;
 	}
 
-	.demo-mobile .btn:hover {
-		background: var(--color-surface-hover);
-		border-color: var(--color-border-light);
-		transform: translateY(-2px);
-	}
+	.btn-primary-mobile:hover { background: var(--color-text-muted); color: var(--color-bg); }
 
 	@media (max-width: 768px) {
-		.demo-frame {
-			display: none;
-		}
-
-		.demo-mobile {
-			display: block;
-		}
+		.demo-frame { display: none; }
+		.demo-mobile { display: block; }
 	}
 </style>

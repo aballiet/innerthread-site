@@ -70,6 +70,7 @@
 			<span class="chip chip-accent">$0 API costs</span>
 			<span class="chip chip-neutral">10 sources</span>
 			<span class="chip chip-neutral">MIT licensed</span>
+			<span class="chip chip-neutral">384D vector search</span>
 		</div>
 	</div>
 </section>

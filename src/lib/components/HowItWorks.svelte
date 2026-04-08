@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="section-header" use:inview>
 			<h2 class="reveal">How it works</h2>
-			<p class="reveal reveal-delay-1">Five steps from scattered conversations to structured reflection.</p>
+			<p class="reveal reveal-delay-1">Export your data from the platforms that hold it. Import it locally. Browse, explore, and reflect on your own terms.</p>
 		</div>
 
 		<div class="steps" use:inview>
@@ -78,7 +78,7 @@
 					</svg>
 				</div>
 				<h3>Reflect with Claude</h3>
-				<p>Claude is embedded directly in the app with full access to your data. Ask about patterns, relationships, or decisions. Also works as an MCP server for Claude Desktop. Uses your existing Claude subscription.</p>
+				<p>Claude is embedded in the app and sees only what you allow. Use labels to control which conversations it can access. Ask about patterns, relationships, or decisions. Also works as an MCP server for Claude Desktop. Uses your existing Claude subscription.</p>
 			</div>
 
 			<div class="step-connector" aria-hidden="true">

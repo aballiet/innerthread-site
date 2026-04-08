@@ -2,50 +2,61 @@
 	import { inview } from '$lib/actions/inview.js';
 </script>
 
-<section class="compounding">
+<section class="connect-dots">
 	<div class="container">
 		<div class="section-header" use:inview>
 			<p class="section-tag reveal">Why this is different</p>
-			<h2 class="reveal reveal-delay-1">Value compounds <span class="highlight">over time.</span></h2>
+			<h2 class="reveal reveal-delay-1">No app sees the full picture. <span class="highlight">Retrace connects the dots.</span></h2>
 			<p class="intro reveal reveal-delay-2">
-				Most tools are as useful on day one as day 100. Retrace gets better the longer
-				you use it. After six months, your context layer understands your life in ways
-				no single app ever could.
+				Your life doesn't happen on one platform. A single decision might span a ChatGPT
+				brainstorm, a WhatsApp conversation with a friend, and an Obsidian note where you
+				planned next steps. Retrace is the only place where all three connect.
 			</p>
 		</div>
 
-		<div class="timeline" use:inview>
-			<div class="timeline-card reveal reveal-delay-1">
-				<div class="timeline-marker">
-					<span class="timeline-dot"></span>
-					<span class="timeline-label">Week 1</span>
+		<div class="examples" use:inview>
+			<div class="example reveal reveal-delay-1">
+				<div class="example-icon">
+					<svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+						<path d="M9 18l6-6-6-6" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M15 18l-6-6 6-6" stroke="var(--color-teal)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5" transform="translate(-4,0)"/>
+					</svg>
 				</div>
+				<h3>Across platforms</h3>
 				<p>
-					Your first conversations are segmented, summarized, and searchable. Topics and
-					emotions are extracted. You can already ask Claude about what you discussed.
+					You explored a career change in Claude, vented about it on WhatsApp,
+					and journaled in Obsidian. Retrace links all three. Search for the
+					topic and see every conversation, every platform, on one timeline.
 				</p>
 			</div>
 
-			<div class="timeline-card reveal reveal-delay-2">
-				<div class="timeline-marker">
-					<span class="timeline-dot dot-mid"></span>
-					<span class="timeline-label">Month 3</span>
+			<div class="example reveal reveal-delay-2">
+				<div class="example-icon">
+					<svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+						<circle cx="12" cy="12" r="3" stroke="var(--color-accent)" stroke-width="1.5"/>
+						<path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+					</svg>
 				</div>
+				<h3>Across people</h3>
 				<p>
-					Your topic registry spans hundreds of entries across platforms. Person timelines
-					reveal how relationships evolve. Patterns emerge that you never noticed.
+					The same topic discussed with three different people reveals three different
+					perspectives. Retrace surfaces who you talked to about what, and when the
+					conversation shifted.
 				</p>
 			</div>
 
-			<div class="timeline-card reveal reveal-delay-3">
-				<div class="timeline-marker">
-					<span class="timeline-dot dot-full"></span>
-					<span class="timeline-label">Month 6+</span>
+			<div class="example reveal reveal-delay-3">
+				<div class="example-icon">
+					<svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+						<path d="M12 8v4l3 3" stroke="var(--color-teal)" stroke-width="1.5" stroke-linecap="round"/>
+						<circle cx="12" cy="12" r="10" stroke="var(--color-teal)" stroke-width="1.5"/>
+					</svg>
 				</div>
+				<h3>Across time</h3>
 				<p>
-					Cross-platform links connect fragments you forgot about. Your embedding space
-					captures the semantic shape of your life. Key facts form a searchable record
-					of decisions, commitments, and turning points.
+					An idea you mentioned once in January, forgot, then brought up again in April.
+					Retrace sees the thread even when you don't. Topics, people, and decisions
+					become visible arcs, not isolated fragments.
 				</p>
 			</div>
 		</div>
@@ -53,7 +64,7 @@
 </section>
 
 <style>
-	.compounding {
+	.connect-dots {
 		background: var(--color-bg-alt);
 		border-top: 1px solid var(--color-border);
 		border-bottom: 1px solid var(--color-border);
@@ -83,9 +94,7 @@
 		margin-bottom: var(--space-lg);
 	}
 
-	.highlight {
-		color: var(--color-accent);
-	}
+	.highlight { color: var(--color-accent); }
 
 	.intro {
 		color: var(--color-text-muted);
@@ -93,15 +102,15 @@
 		line-height: 1.7;
 	}
 
-	.timeline {
+	.examples {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: var(--space-xl);
-		max-width: 900px;
+		max-width: 960px;
 		margin: 0 auto;
 	}
 
-	.timeline-card {
+	.example {
 		padding: var(--space-2xl);
 		background: var(--color-surface);
 		border: 1px solid var(--color-border);
@@ -109,51 +118,29 @@
 		transition: all var(--duration-normal) ease;
 	}
 
-	.timeline-card:hover {
+	.example:hover {
 		border-color: var(--color-border-light);
 		transform: translateY(-4px);
 		box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 	}
 
-	.timeline-marker {
-		display: flex;
-		align-items: center;
-		gap: var(--space-sm);
-		margin-bottom: var(--space-lg);
+	.example-icon { margin-bottom: var(--space-lg); }
+
+	h3 {
+		font-size: 1.15rem;
+		font-weight: 650;
+		letter-spacing: -0.01em;
+		margin-bottom: var(--space-md);
 	}
 
-	.timeline-dot {
-		width: 10px;
-		height: 10px;
-		border-radius: 50%;
-		background: var(--color-accent);
-		opacity: 0.4;
-	}
-
-	.dot-mid {
-		opacity: 0.7;
-	}
-
-	.dot-full {
-		opacity: 1;
-	}
-
-	.timeline-label {
-		font-family: var(--font-mono);
-		font-size: 0.8rem;
-		font-weight: 600;
-		color: var(--color-accent);
-		letter-spacing: 0.04em;
-	}
-
-	.timeline-card p {
+	.example p {
 		color: var(--color-text-muted);
 		font-size: 0.95rem;
 		line-height: 1.7;
 	}
 
 	@media (max-width: 900px) {
-		.timeline {
+		.examples {
 			grid-template-columns: 1fr;
 			max-width: 500px;
 		}
