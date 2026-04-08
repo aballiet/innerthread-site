@@ -10,8 +10,8 @@
 				<h2>Built for people who own their tools.</h2>
 				<p class="cta-desc">
 					Retrace is free and MIT licensed. Download the macOS app, install the Chrome extension,
-					and you are running in under five minutes. A read-only CLI is included for terminal users.
-					No account. No subscription. No API key.
+					and you are running in under five minutes. Claude is embedded in the app using
+					your existing subscription. No account. No API key.
 				</p>
 				<div class="download-block">
 					<a href="https://github.com/aballiet/retrace/releases/latest" target="_blank" rel="noopener" class="btn btn-primary btn-download">
@@ -48,8 +48,8 @@
 
 		<div class="stats" use:inview>
 			<div class="stat reveal reveal-delay-1">
-				<span class="stat-value">13</span>
-				<span class="stat-label">MCP tools</span>
+				<span class="stat-value">10</span>
+				<span class="stat-label">Sources</span>
 			</div>
 			<div class="stat reveal reveal-delay-2">
 				<span class="stat-value">$0</span>
@@ -60,8 +60,8 @@
 				<span class="stat-label">Licensed</span>
 			</div>
 			<div class="stat reveal reveal-delay-4">
-				<span class="stat-value">9</span>
-				<span class="stat-label">Sources</span>
+				<span class="stat-value">100%</span>
+				<span class="stat-label">Local</span>
 			</div>
 		</div>
 	</div>

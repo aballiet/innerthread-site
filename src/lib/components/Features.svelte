@@ -7,21 +7,42 @@
 		<div class="section-header" use:inview>
 			<h2 class="reveal">Everything Retrace <span class="highlight">can do.</span></h2>
 			<p class="reveal reveal-delay-1">
-				Built for people who use AI tools daily and want to understand their own thinking.
+				Built for people who want to understand their own thinking across every platform they use.
 			</p>
 		</div>
 
 		<div class="feature-grid" use:inview>
 			<div class="feature reveal reveal-delay-1">
-				<div class="feature-tag">Sync</div>
-				<h3>Set and forget with Chrome</h3>
+				<div class="feature-tag">Chat</div>
+				<h3>Claude embedded in the app</h3>
 				<p>
-					The browser extension runs in the background and syncs new conversations
-					from ChatGPT, Claude, and Gemini as you use them. No manual exports.
+					Claude lives inside Retrace with full access to your conversations, topics, and people.
+					Ask about patterns in your life, reflect on relationships, or explore decisions you made.
+					Uses your existing Claude subscription via the Agent SDK.
 				</p>
 			</div>
 
 			<div class="feature reveal reveal-delay-2">
+				<div class="feature-tag">Network</div>
+				<h3>See your social graph</h3>
+				<p>
+					An interactive force-directed graph visualizes your relationships with
+					tie-strength scoring. Watch connections form over time with timelapse animation.
+					Dunbar-inspired tiers from inner circle to periphery.
+				</p>
+			</div>
+
+			<div class="feature reveal reveal-delay-3">
+				<div class="feature-tag">Sync</div>
+				<h3>Set and forget with Chrome</h3>
+				<p>
+					The browser extension syncs ChatGPT and Claude conversations in the background.
+					It also scrapes profile pictures from Messenger, WhatsApp, and Instagram
+					as you browse. WhatsApp connects live via QR code for real-time messages.
+				</p>
+			</div>
+
+			<div class="feature reveal reveal-delay-4">
 				<div class="feature-tag">Search</div>
 				<h3>Semantic and keyword hybrid</h3>
 				<p>
@@ -31,40 +52,22 @@
 			</div>
 
 			<div class="feature reveal reveal-delay-3">
-				<div class="feature-tag">Context</div>
-				<h3>13 MCP tools for Claude Desktop</h3>
+				<div class="feature-tag">Reflect</div>
+				<h3>Time Capsules and reflections</h3>
 				<p>
-					Search conversations, explore topic trends, view relationship timelines, track
-					emotions over time, and save reflections. All from inside Claude Desktop.
+					"This time last year" comparisons surface how your thinking evolved.
+					Guided reflection sessions produce structured notes with source references.
+					Reflections sync to Obsidian and build on each other over time.
 				</p>
 			</div>
 
 			<div class="feature reveal reveal-delay-4">
-				<div class="feature-tag">People</div>
-				<h3>Understand your relationships</h3>
+				<div class="feature-tag">Scope</div>
+				<h3>Labels and permissions</h3>
 				<p>
-					See the full timeline of conversations with any person across every platform.
-					Topics, emotions, and frequency over time. Your relationships have a shape.
-					Retrace makes it visible.
-				</p>
-			</div>
-
-			<div class="feature reveal reveal-delay-3">
-				<div class="feature-tag">Obsidian</div>
-				<h3>Enrich notes with real evidence</h3>
-				<p>
-					Retrace enriches Obsidian notes with conversation evidence using callout blocks.
-					Cross-reference what your notes claim with what you actually said. Preview before writing.
-				</p>
-			</div>
-
-			<div class="feature reveal reveal-delay-4">
-				<div class="feature-tag">Privacy</div>
-				<h3>Local AI, zero cloud</h3>
-				<p>
-					Embedding and LLM analysis run entirely on-device. Choose your model size.
-					No account required. No telemetry. One SQLite file. The Chrome extension
-					only reads from your logged-in browser session.
+					Tag conversations with labels (platform, topic, or custom). Set allow/block
+					rules per consumer to control what the embedded chat or MCP server can access.
+					Your private conversations stay private, even from your own agents.
 				</p>
 			</div>
 		</div>

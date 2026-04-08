@@ -5,12 +5,12 @@
 <section class="mcp">
 	<div class="container">
 		<div class="section-intro" use:inview>
-			<p class="section-tag reveal">Model Context Protocol</p>
-			<h2 class="reveal reveal-delay-1">Retrace turns Claude Desktop<br /><span class="highlight">into your personal analyst.</span></h2>
+			<p class="section-tag reveal">Embedded Intelligence</p>
+			<h2 class="reveal reveal-delay-1">Claude sees your whole life.<br /><span class="highlight">You just ask.</span></h2>
 			<p class="intro-body reveal reveal-delay-2">
-				13 MCP tools expose your local context layer to Claude Desktop. Pre-processed
-				summaries, topics, emotions, and embeddings. No API calls. No extra costs.
-				If you have Claude Pro, you already have everything you need.
+				Claude is embedded in Retrace via the Agent SDK with in-process access to your
+				conversations, topics, people, and search. Also available as an MCP server for
+				Claude Desktop. Uses your existing Claude subscription. No API key needed.
 			</p>
 		</div>
 
@@ -19,58 +19,38 @@
 				<div class="tools-cols">
 					<div class="tools-col">
 						<div class="tool-item">
-							<span class="tool-name">search_conversations</span>
-							<span class="tool-desc">keyword search across all platforms</span>
+							<span class="tool-name">get_context</span>
+							<span class="tool-desc">full context for the current page</span>
+						</div>
+						<div class="tool-item">
+							<span class="tool-name">execute_query</span>
+							<span class="tool-desc">flexible SQL over your data</span>
 						</div>
 						<div class="tool-item">
 							<span class="tool-name">semantic_search</span>
-							<span class="tool-desc">vector similarity search</span>
-						</div>
-						<div class="tool-item">
-							<span class="tool-name">get_topic_timeline</span>
-							<span class="tool-desc">topic frequency over time</span>
-						</div>
-						<div class="tool-item">
-							<span class="tool-name">get_person_timeline</span>
-							<span class="tool-desc">all conversations with a specific person</span>
-						</div>
-						<div class="tool-item">
-							<span class="tool-name">get_reflection_history</span>
-							<span class="tool-desc">past reflections by life dimension</span>
-						</div>
-						<div class="tool-item">
-							<span class="tool-name">get_messages_in_range</span>
-							<span class="tool-desc">messages within a time window</span>
-						</div>
-						<div class="tool-item">
-							<span class="tool-name">list_conversations</span>
-							<span class="tool-desc">browse with metadata</span>
-						</div>
-					</div>
-					<div class="tools-col">
-						<div class="tool-item">
-							<span class="tool-name">get_conversation</span>
-							<span class="tool-desc">full conversation with metadata</span>
+							<span class="tool-desc">vector similarity across all platforms</span>
 						</div>
 						<div class="tool-item">
 							<span class="tool-name">get_stats</span>
 							<span class="tool-desc">database overview and breakdown</span>
 						</div>
-						<div class="tool-item">
-							<span class="tool-name">get_topics</span>
-							<span class="tool-desc">topics ranked by frequency</span>
+					</div>
+					<div class="tools-col">
+						<div class="tool-item tool-item--label">
+							<span class="tool-name">In-app chat</span>
+							<span class="tool-desc">Claude embedded via Agent SDK</span>
 						</div>
-						<div class="tool-item">
-							<span class="tool-name">search_segments</span>
-							<span class="tool-desc">semantic search within segments</span>
+						<div class="tool-item tool-item--label">
+							<span class="tool-name">MCP server</span>
+							<span class="tool-desc">Also works with Claude Desktop</span>
 						</div>
-						<div class="tool-item">
-							<span class="tool-name">write_reflection</span>
-							<span class="tool-desc">save reflection to Obsidian</span>
+						<div class="tool-item tool-item--label">
+							<span class="tool-name">Scope enforcement</span>
+							<span class="tool-desc">Label-based access control per consumer</span>
 						</div>
-						<div class="tool-item">
-							<span class="tool-name">list_notes</span>
-							<span class="tool-desc">browse Keep and Obsidian notes</span>
+						<div class="tool-item tool-item--label">
+							<span class="tool-name">Reflection write-back</span>
+							<span class="tool-desc">Saves to app + Obsidian vault</span>
 						</div>
 					</div>
 				</div>
@@ -185,6 +165,11 @@
 		font-size: 0.75rem;
 		font-weight: 600;
 		color: var(--color-teal);
+	}
+
+	.tool-item--label .tool-name {
+		font-family: inherit;
+		color: var(--color-text);
 	}
 
 	.tool-desc {

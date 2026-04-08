@@ -23,7 +23,7 @@
 					The local LLM processes everything on your hardware. That is the full data path.
 				</p>
 				<div class="pillar-detail">
-					<code>~/Library/Application Support/retrace/data.db</code>
+					<code>~/.retrace/retrace.db</code>
 					<span>One file. Your file.</span>
 				</div>
 			</div>

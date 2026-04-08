@@ -39,8 +39,8 @@
 						<path d="M12 15V3" stroke="var(--color-teal)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
 				</div>
-				<h3>Import everything else</h3>
-				<p>Drop in WhatsApp exports, Google Keep archives, calendar files, SMS backups, or Instagram DMs. Format is detected automatically. Obsidian daily notes sync directly from your vault.</p>
+				<h3>Import or live sync</h3>
+				<p>Drop in WhatsApp exports, Messenger archives, Google Keep, calendar files, SMS backups, or Instagram DMs. Format is detected automatically. WhatsApp also connects live via QR code. Obsidian daily notes sync from your vault.</p>
 			</div>
 
 			<div class="step-connector" aria-hidden="true">
@@ -77,8 +77,8 @@
 						<path d="M8 11h6M11 8v6" stroke="var(--color-teal)" stroke-width="1.5" stroke-linecap="round"/>
 					</svg>
 				</div>
-				<h3>Query with Claude Desktop</h3>
-				<p>Retrace exposes 13 MCP tools to Claude Desktop. Search by keyword or meaning. Pull up a person's full timeline. Track how a topic evolved. Uses your existing Claude Pro subscription.</p>
+				<h3>Reflect with Claude</h3>
+				<p>Claude is embedded directly in the app with full access to your data. Ask about patterns, relationships, or decisions. Also works as an MCP server for Claude Desktop. Uses your existing Claude subscription.</p>
 			</div>
 
 			<div class="step-connector" aria-hidden="true">

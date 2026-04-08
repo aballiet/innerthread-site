@@ -22,10 +22,10 @@
 				<span class="highlight">that don't talk to each other.</span>
 			</h1>
 			<p class="hero-sub reveal reveal-delay-2">
-				Retrace reads from everywhere you think and write. ChatGPT, Claude, Gemini,
-				WhatsApp, Obsidian, Google Calendar, Keep, SMS, Instagram. It processes
-				everything with on-device AI and surfaces your accumulated context to Claude
-				Desktop via MCP. No cloud. No API costs. Context, not destination.
+				Retrace reads from everywhere you think and write. ChatGPT, Claude,
+				WhatsApp, Messenger, Obsidian, Google Calendar, Keep, SMS, Instagram.
+				It processes everything with on-device AI, then lets you reflect with
+				Claude embedded directly in the app. No cloud. No API costs.
 			</p>
 			<div class="hero-ctas reveal reveal-delay-3">
 				<div class="hero-ctas__buttons">
