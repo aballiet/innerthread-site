@@ -9,7 +9,7 @@ export function SearchExplainer() {
       notes={[
         {
           title: "Embed",
-          text: "Your query is converted into a 384-dimensional vector using a local embedding model. This captures meaning, not just keywords.",
+          text: "Your query is converted into a vector embedding using a local model. This captures meaning, not just keywords.",
         },
         {
           title: "Search",

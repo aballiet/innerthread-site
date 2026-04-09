@@ -128,7 +128,7 @@ export function SearchFlow() {
 
         {/* Embed */}
         <div className="flex flex-col items-center">
-          <Step ref={embedRef} className="border-[#3a8f85]" label="Embed" sublabel="384D vector">
+          <Step ref={embedRef} className="border-[#3a8f85]" label="Embed" sublabel="Vector embedding">
             <EmbedIcon />
           </Step>
         </div>
