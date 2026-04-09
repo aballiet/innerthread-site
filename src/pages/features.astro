@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import MCPSection from '../components/MCPSection.astro';
 import MobileVision from '../components/MobileVision.astro';
+import { SearchExplainer } from '../components/animations/SearchExplainer';
+import { TimeCapsuleExplainer } from '../components/animations/TimeCapsuleExplainer';
 ---
 
 <BaseLayout title="Features - Retrace" description="Everything Retrace can do with your conversations. Search, network graph, time capsules, Claude chat, and more.">
@@ -57,6 +59,7 @@ import MobileVision from '../components/MobileVision.astro';
 				Search by meaning, not just keywords. "That restaurant someone recommended last summer" works.
 				384-dimensional embeddings power similarity search across all platforms in one query.
 			</p>
+			<SearchExplainer client:visible />
 		</div>
 		<div class="feature-visual reveal reveal-delay-2">
 			<div class="mock-search">
@@ -147,6 +150,7 @@ import MobileVision from '../components/MobileVision.astro';
 				then-and-now comparisons surface what's changed, what echoes, and what you
 				forgot entirely. Reflections grounded in your actual conversations.
 			</p>
+			<TimeCapsuleExplainer client:visible />
 		</div>
 		<div class="feature-visual reveal reveal-delay-2">
 			<div class="mock-capsule">
