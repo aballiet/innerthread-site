@@ -40,9 +40,7 @@ jobs:
       - name: Merge docs into site output
         run: |
           mkdir -p dist/docs
-          cp -r docs/out/docs/* dist/docs/
-          cp -r docs/out/_next dist/docs/_next
-          cp docs/out/docs.html dist/docs/index.html
+          cp -r docs/out/* dist/docs/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
